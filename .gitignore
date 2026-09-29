@@ -1,0 +1,13 @@
+# 기본 원칙: 이 폴더는 대부분 사내 문서/개인 업무 정보이므로
+# 전부 제외하고, 실제 코드(스킬)만 예외로 허용한다.
+*
+
+# 예외: overtime-report 스킬 코드만 허용
+!.gitignore
+!.claude/
+!.claude/**
+!.claude/skills/
+!.claude/skills/**
+
+# 예외의 예외: 실제 고객사/링크 등 비공개 값이 담긴 로컬 설정 파일은 다시 제외
+.claude/**/private-config.md
